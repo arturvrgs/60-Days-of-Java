@@ -1,0 +1,18 @@
+Problem Statement
+Imagine you have a shape-shifting variable named shapeValue.
+This variable can transform into different forms based on your command.
+Implement a Java program that allows you to:
+
+✅ Define an initial shapeValue as a double.
+✅ Transform shapeValue into different types (int, long, and float).
+✅ Display the transformed values dynamically.
+✅ Understand how type casting affects numeric precision.
+
+Expected Output
+When you run the program, you should see the following output:
+
+Current Shape (double): 42.75
+Transforming shapes...
+Transformed into int: 42
+Transformed into long: 42
+Transformed into float: 42.75

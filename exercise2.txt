@@ -1,0 +1,72 @@
+ADVANCED EXERCISE: Variable Manipulation and Data Types in Java
+WARNING! ONLY FOR ADVANCED PROGRAMMERS.
+The Exercises marked as “ADVANCED” are meant to be challenging exercises for those that want to really put their knowledge to the test. They are exceptionally hard to complete continuously, so if you find yourself stuck or confused, do not worry! You have 2 options here:
+
+Either FAIL 3 times for the Solution Explanation to unlock, where you will get our solution to the exercise which you can copy/paste to complete the exercise.
+
+Or leave the exercise incomplete and try again later in the course when you feel more advanced.
+
+Good luck with the exercise!
+
+Variable Manipulation and Data Types in Java
+
+Please, avoid changing the given source code for the exercise! Only add code, don’t modify unless it is instructed to do so!
+
+Create a Java program that:
+
+Declares and initializes variables of different types: int, double, char, boolean, and String.
+
+Performs arithmetic operations on numeric variables.
+
+Demonstrates typecasting by converting a double to an int.
+
+Manipulates strings by combining them.
+
+Demonstrates basic boolean logic using negation.
+
+The program should:
+
+Initialize variables of different data types.
+
+Display the variables and their values.
+
+Perform and print the results of arithmetic operations.
+
+Show how typecasting works by converting a double to an int.
+
+Manipulate string variables and display the result.
+
+Perform basic boolean operations and display the results.
+
+Alert!
+
+Make sure your program produces exact outputs for the given inputs to pass the tests.
+
+EXTRA INFO! What does the Test Code Expect?
+
+The test code verifies that your program correctly handles variable initialization, arithmetic operations, typecasting, string manipulation, and boolean logic. Here are the details:
+
+Test Case: Expected Output:
+
+Initial Variables:
+Integer: 10
+Double: 5.75
+Char: A
+Boolean: true
+String: Java Programming
+
+Performing Arithmetic Operations:
+Sum of wholeNumber + 20: 30
+Division of floatingPointNumber by 2.0: 2.875
+
+Typecasting Demonstration:
+Casted floatingPointNumber to int: 5
+
+String Manipulation:
+Combined String: Java Programming is fun!
+
+Boolean Logic:
+Negation of isTrue: false
+Make sure your program produces this exact output to pass the tests.
+
+Good luck!
