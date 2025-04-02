@@ -1,0 +1,138 @@
+Let's Practice: Calorie counter pro
+Interactive Exercise: Calorie Counter Pro
+Objective
+In this exercise, you will create a simple Calorie Counter Pro program in Java. The program will allow users to enter food items and their calorie values, calculate the total daily calorie intake, and display the results.
+
+
+
+Problem Statement
+Create a Java program that:
+
+Prompts the user to enter the names of three food items.
+
+Asks for the calorie values of each food item.
+
+Calculates the total calorie intake.
+
+Displays a summary of the foods and their corresponding calories.
+
+
+
+Exercise Instructions
+1️⃣ Define the variables to store food names and calorie values.
+
+2️⃣ Use Scanner to read input from the user (both String and int).
+
+3️⃣ Handle the Scanner properly by consuming the newline character when needed.
+
+4️⃣ Compute the total calorie intake.
+
+5️⃣ Display the results in a clear format.
+
+
+
+📝 Starter Code: Try It Yourself!
+Use the following code as a starting point and complete the missing parts:
+
+import java.util.Scanner;
+
+public class CalorieCounterPro {
+    public static void main(String[] args) {
+        // Welcome message
+        System.out.println("Welcome to Calorie Counter Pro!");
+
+        // Step 1: Declare variables
+        String food1, food2, food3;
+        int calories1, calories2, calories3;
+        int totalCalories;
+
+        // Step 2: Initialize Scanner
+        Scanner scanner = new Scanner(System.in);
+
+        // Step 3: Prompt user for first food item and its calories
+        System.out.print("Enter the name of the first food item: ");
+        food1 = scanner.nextLine();
+        System.out.print("Enter the calories for " + food1 + ": ");
+        calories1 = scanner.nextInt();
+        scanner.nextLine(); // Consume newline
+
+        // Step 4: Prompt user for second food item and its calories
+        System.out.print("Enter the name of the second food item: ");
+        food2 = scanner.nextLine();
+        System.out.print("Enter the calories for " + food2 + ": ");
+        calories2 = scanner.nextInt();
+        scanner.nextLine(); // Consume newline
+
+        // Step 5: Prompt user for third food item and its calories
+        System.out.print("Enter the name of the third food item: ");
+        food3 = scanner.nextLine();
+        System.out.print("Enter the calories for " + food3 + ": ");
+        calories3 = scanner.nextInt();
+        scanner.nextLine(); // Consume newline
+
+        // Step 6: Calculate total calorie intake
+        totalCalories = calories1 + calories2 + calories3;
+
+        // Step 7: Display the summary
+        System.out.println("\nYour Calorie Intake:");
+        System.out.println("1. " + food1 + " - " + calories1 + " calories");
+        System.out.println("2. " + food2 + " - " + calories2 + " calories");
+        System.out.println("3. " + food3 + " - " + calories3 + " calories");
+
+        // Step 8: Display total calories
+        System.out.println("\nTotal Calorie Intake: " + totalCalories + " calories");
+
+        // Step 9: Thank the user and close Scanner
+        System.out.println("Thank you for using Calorie Counter Pro!");
+        scanner.close();
+    }
+}
+
+
+Expected Output
+After running the program, the user interaction should look like this:
+
+Welcome to Calorie Counter Pro!
+Enter the name of the first food item: Rice
+Enter the calories for Rice: 150
+Enter the name of the second food item: Salad
+Enter the calories for Salad: 50
+Enter the name of the third food item: Chicken Breast
+Enter the calories for Chicken Breast: 250
+
+Your Calorie Intake:
+1. Rice - 150 calories
+2. Salad - 50 calories
+3. Chicken Breast - 250 calories
+
+Total Calorie Intake: 450 calories
+Thank you for using Calorie Counter Pro!
+
+
+💡 Learning Points
+✅ Handling user input properly: Using scanner.nextLine() after scanner.nextInt() to avoid input issues.
+
+✅ Concatenating strings dynamically: Formatting output for clarity and ease of reading.
+
+✅ Performing arithmetic operations: Summing calorie values to get total intake.
+
+✅ Using variables effectively: Storing and manipulating user input.
+
+
+
+🚀 Bonus Challenges
+Want to make your calorie counter even better? Try these extra tasks:
+
+🔹 Allow the user to enter more than three food items by using loops.
+
+🔹 Improve formatting: Align text using printf() for a more structured display.
+
+🔹 Add calorie recommendations: Display a message based on the total intake (e.g., "Great job!" or "Consider reducing calorie intake.").
+
+🔹 Store multiple entries and track calorie intake over multiple days.
+
+
+
+If you have any questions or run into any issues, feel free to reach out in the course discussion forums—we're here to help!
+
+Happy coding! 🚀
