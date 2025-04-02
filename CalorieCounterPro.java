@@ -7,7 +7,7 @@ public class CalorieCounterPro {
         Scanner scan = new Scanner(System.in);
 
         ArrayList<String> foodItems = new ArrayList<>();
-        ArrayList<Integer> calorieValues = new ArrayList<>();
+        ArrayList<Short> calorieValues = new ArrayList<>();
 
         int calorieCounter = 0;
 
@@ -17,7 +17,7 @@ public class CalorieCounterPro {
             String foodItem = scan.nextLine();
 
             System.out.println("Enter its calorie: ");
-            int calorieValue = scan.nextInt();
+            short calorieValue = scan.nextShort();
 
             foodItems.add(foodItem);
             calorieValues.add(calorieValue);
@@ -32,11 +32,12 @@ public class CalorieCounterPro {
 
             if(choice != 1) break;
         }
+        scan.close();
 
         System.out.println("Your Calorie Intake: ");
 
         for(int i = 0; i < foodItems.size(); i++) {
-            System.out.printf("%d : %s - %d calories\n", i+1, foodItems.get(i), calorieValues.get(i));
+            System.out.printf("%d: %s - %d calories\n", i+1, foodItems.get(i), calorieValues.get(i));
         }
 
         System.out.println("Your Calorie Total Intake: " + calorieCounter);
