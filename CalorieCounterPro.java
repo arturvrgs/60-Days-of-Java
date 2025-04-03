@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class CalorieCounterPro {
-    public static void main(String[] args) {
+    public void CalorieCounterPro() {
 
         Scanner scan = new Scanner(System.in);
 
