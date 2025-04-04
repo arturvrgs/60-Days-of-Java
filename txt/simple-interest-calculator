@@ -1,0 +1,104 @@
+Let's Practice: Simple Interest Calculator
+Interactive Exercise: Simple Interest Calculator
+Objective
+In this exercise, you will build a Simple Interest Calculator in Java. You will practice:
+
+✅ Reading user input using Scanner
+
+✅ Performing arithmetic operations
+
+✅ Applying the formula for simple interest
+
+✅ Displaying formatted output
+
+By the end of this exercise, you will have a fully functional program that calculates simple interest based on user input.
+
+
+
+Problem Statement
+Write a Java program that:
+
+Prompts the user to enter the principal amount, annual interest rate (percentage), and time period (years).
+
+Calculates the simple interest using the formula:
+
+SI = (P × R × T) / 100
+
+Where:
+
+SI = Simple Interest
+
+P = Principal Amount
+
+R = Annual Interest Rate (in percentage)
+
+T = Time Period (in years)
+
+Displays the calculated simple interest.
+
+
+
+Exercise Instructions
+1️⃣ Declare variables for principal amount, interest rate, and time period using double.
+
+2️⃣ Use Scanner to read input from the user.
+
+3️⃣ Perform the simple interest calculation using the formula.
+
+4️⃣ Display the result in a user-friendly format.
+
+5️⃣ Close the Scanner object after input handling.
+
+
+
+📝 Starter Code: Try It Yourself!
+Use the following template and complete the missing parts:
+
+import java.util.Scanner;
+
+public class SimpleInterestCalculator {
+    public static void main(String[] args) {
+        // Step 1: Create a Scanner object
+        Scanner scanner = new Scanner(System.in);
+
+        // Step 2: Prompt user for inputs
+        System.out.print("Enter principal amount: ");
+        double principal = scanner.nextDouble();
+
+        System.out.print("Enter annual interest rate (in percentage): ");
+        double rate = scanner.nextDouble();
+
+        System.out.print("Enter time period (in years): ");
+        double time = scanner.nextDouble();
+
+        // Step 3: Calculate simple interest
+        double interest = (principal * rate * time) / 100;
+
+        // Step 4: Display the result
+        System.out.println("Simple Interest: $" + interest);
+
+        // Step 5: Close the Scanner object
+        scanner.close();
+    }
+}
+
+
+Expected Output
+After running the program, the user interaction should look like this:
+
+Enter principal amount: 1000
+Enter annual interest rate (in percentage): 5
+Enter time period (in years): 3
+Simple Interest: $150.0
+
+
+🚀 Bonus Challenges
+Want to enhance your program? Try these additional challenges:
+
+🔹 Allow the user to enter more than one calculation in a loop until they choose to exit. 🔹 Format the output to display only two decimal places using System.out.printf(). 🔹 Add validation: Ensure the user does not enter negative values for principal, interest rate, or time.
+
+
+
+If you have any questions or run into any issues, feel free to ask in the course discussion forums. We’re here to help!
+
+Happy coding! 🚀
