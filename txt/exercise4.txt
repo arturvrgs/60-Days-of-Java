@@ -1,0 +1,71 @@
+ADVANCED EXERCISE: String Manipulation and Comparison in Java
+WARNING! ONLY FOR ADVANCED PROGRAMMERS.
+The Exercises marked as “ADVANCED” are meant to be challenging exercises for those that want to really put their knowledge to the test. They are exceptionally hard to complete continuously, so if you find yourself stuck or confused, do not worry! You have 2 options here:
+
+Either FAIL 3 times for the Solution Explanation to unlock, where you will get our solution to the exercise which you can copy/paste to complete the exercise.
+
+Or leave the exercise incomplete and try again later in the course when you feel more advanced.
+
+Good luck with the exercise!
+
+String Manipulation and Comparison in Java
+
+Please, avoid changing the given source code for the exercise! Only add code, don’t modify unless it is instructed to do so!
+
+Create a Java program that:
+
+Takes user input and performs various string manipulations, including comparing strings, replacing words, and formatting strings with numbers.
+
+Demonstrates key string methods like length(), charAt(), equals(), compareTo(), substring(), and replace().
+
+Formats numbers using string formatting.
+
+The program should:
+
+Take a full sentence as input and print its length, first character, and last character.
+
+Prompt for a second sentence and compare the two sentences using equals(), equalsIgnoreCase(), and compareTo().
+
+Ask the user to replace a word in the first sentence and display the modified sentence.
+
+Convert the sentence to both uppercase and lowercase.
+
+Take a numeric input (like an interest rate) and format it with two decimal places using printf().
+
+Alert!
+
+Make sure your program produces exact outputs for the given inputs to pass the tests.
+
+EXTRA INFO! What does the Test Code Expect?
+
+The test code verifies that your program correctly handles string manipulation, comparison, and formatting. Here are the details:
+
+Test Case: Input:
+
+Sentence 1: Hello World
+Sentence 2: hello world
+Word to replace: World
+Replacement word: Java
+Interest rate: 5.5
+Expected Output:
+
+Enter a full sentence:
+The length of the sentence is: 11
+The first character of the sentence is: H
+The last character of the sentence is: d
+
+Enter another sentence to compare:
+The two sentences are the same, ignoring case (equalsIgnoreCase).
+The sentences are lexicographically greater.
+
+Enter a word to replace in the first sentence:
+Enter the replacement word:
+Modified sentence: Hello Java
+Uppercase version: HELLO WORLD
+Lowercase version: hello world
+
+Enter an interest rate (e.g., 5.5):
+The formatted interest rate is: 5.50%
+Make sure your program produces this exact output to pass the tests.
+
+Good luck!
