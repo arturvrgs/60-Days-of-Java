@@ -1,0 +1,174 @@
+Let's Practice: Budget Tracker Plus
+Interactive Exercise: Budget Tracker Plus
+Objective
+In this exercise, you will create a Budget Tracker Plus program in Java. The program will:
+
+✅ Take user input for monthly income and various expenses. ✅ Perform arithmetic operations to calculate total expenses, remaining budget, and percentage of income spent per category. ✅ Use string formatting to display a structured budget summary. ✅ Showcase variables, data types, operators, user input handling, and formatting.
+
+This is a practical, real-world application that will enhance your Java programming skills and financial awareness!
+
+
+
+Problem Statement
+Create a Java program that:
+
+1️⃣ Prompts the user to enter their monthly income.
+
+2️⃣ Asks for expense details in four categories:
+
+Rent
+
+Groceries
+
+Transportation
+
+Entertainment
+
+3️⃣ Calculates the following:
+
+Total expenses
+
+Remaining budget
+
+Percentage of income spent on each category
+
+4️⃣ Displays a structured budget summary.
+
+
+
+
+
+Starter Code: Complete the Missing Parts!
+import java.util.Scanner;
+
+public class BudgetTrackerPlus {
+
+    public static void main(String[] args) {
+        // Step 1: Declare and initialize Scanner
+        Scanner scanner = new Scanner(System.in);
+
+        // Step 2: Prompt user for monthly income
+        System.out.print("Enter your monthly income: $");
+        double income = scanner.nextDouble();
+
+        // Step 3: Prompt user for various expenses
+        System.out.print("Enter your monthly rent: $");
+        double rent = scanner.nextDouble();
+
+        System.out.print("Enter your monthly groceries expense: $");
+        double groceries = scanner.nextDouble();
+
+        System.out.print("Enter your monthly transportation expense: $");
+        double transportation = scanner.nextDouble();
+
+        System.out.print("Enter your monthly entertainment expense: $");
+        double entertainment = scanner.nextDouble();
+
+        // Step 4: Calculate total expenses
+        double totalExpenses = // COMPLETE THIS PART
+
+        // Step 5: Calculate remaining budget
+        double remainingBudget = // COMPLETE THIS PART
+
+        // Step 6: Calculate percentage spent per category
+        double rentPercentage = // COMPLETE THIS PART
+        double groceriesPercentage = // COMPLETE THIS PART
+        double transportationPercentage = // COMPLETE THIS PART
+        double entertainmentPercentage = // COMPLETE THIS PART
+
+        // Step 7: Display formatted budget summary
+        System.out.println("\n********** Budget Summary **********");
+        System.out.printf("Monthly Income: $%.2f\n", income);
+        System.out.printf("Total Expenses: $%.2f\n", totalExpenses);
+        System.out.printf("Remaining Budget: $%.2f\n", remainingBudget);
+        System.out.println("Expenses Breakdown:");
+        System.out.printf("  Rent: $%.2f (%.2f%% of income)\n", rent, rentPercentage);
+        System.out.printf("  Groceries: $%.2f (%.2f%% of income)\n", groceries, groceriesPercentage);
+        System.out.printf("  Transportation: $%.2f (%.2f%% of income)\n", transportation, transportationPercentage);
+        System.out.printf("  Entertainment: $%.2f (%.2f%% of income)\n", entertainment, entertainmentPercentage);
+        System.out.println("************************************");
+
+        // Step 8: Close Scanner
+        scanner.close();
+    }
+}
+
+
+Expected Output
+Enter your monthly income: $5000
+Enter your monthly rent: $1500
+Enter your monthly groceries expense: $600
+Enter your monthly transportation expense: $300
+Enter your monthly entertainment expense: $400
+
+********** Budget Summary **********
+Monthly Income: $5000.00
+Total Expenses: $2800.00
+Remaining Budget: $2200.00
+Expenses Breakdown:
+  Rent: $1500.00 (30.00% of income)
+  Groceries: $600.00 (12.00% of income)
+  Transportation: $300.00 (6.00% of income)
+  Entertainment: $400.00 (8.00% of income)
+************************************
+
+
+Final Solution: Check Only If Needed!
+⚠️ ONLY CHECK THIS AFTER COMPLETING THE EXERCISE YOURSELF OR IF YOU ARE STUCK!
+
+import java.util.Scanner;
+
+public class BudgetTrackerPlus {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Taking user input for monthly income
+        System.out.print("Enter your monthly income: $");
+        double income = scanner.nextDouble();
+
+        // Taking user input for various expenses
+        System.out.print("Enter your monthly rent: $");
+        double rent = scanner.nextDouble();
+
+        System.out.print("Enter your monthly groceries expense: $");
+        double groceries = scanner.nextDouble();
+
+        System.out.print("Enter your monthly transportation expense: $");
+        double transportation = scanner.nextDouble();
+
+        System.out.print("Enter your monthly entertainment expense: $");
+        double entertainment = scanner.nextDouble();
+
+        // Calculating total expenses
+        double totalExpenses = rent + groceries + transportation + entertainment;
+
+        // Calculating remaining budget
+        double remainingBudget = income - totalExpenses;
+
+        // Calculating percentage of income spent on each category
+        double rentPercentage = (rent / income) * 100;
+        double groceriesPercentage = (groceries / income) * 100;
+        double transportationPercentage = (transportation / income) * 100;
+        double entertainmentPercentage = (entertainment / income) * 100;
+
+        // Displaying budget summary
+        System.out.println("\n********** Budget Summary **********");
+        System.out.printf("Monthly Income: $%.2f\n", income);
+        System.out.printf("Total Expenses: $%.2f\n", totalExpenses);
+        System.out.printf("Remaining Budget: $%.2f\n", remainingBudget);
+        System.out.println("Expenses Breakdown:");
+        System.out.printf("  Rent: $%.2f (%.2f%% of income)\n", rent, rentPercentage);
+        System.out.printf("  Groceries: $%.2f (%.2f%% of income)\n", groceries, groceriesPercentage);
+        System.out.printf("  Transportation: $%.2f (%.2f%% of income)\n", transportation, transportationPercentage);
+        System.out.printf("  Entertainment: $%.2f (%.2f%% of income)\n", entertainment, entertainmentPercentage);
+        System.out.println("************************************");
+
+        scanner.close();
+    }
+}
+
+
+If you have any questions or run into any issues, feel free to ask in the course discussion forums. We’re here to help!
+
+Happy coding! 🚀
