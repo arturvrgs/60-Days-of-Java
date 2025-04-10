@@ -1,0 +1,56 @@
+ADVANCED EXERCISE: Displaying Text with Java and Escape Sequences
+
+WARNING! ONLY FOR ADVANCED PROGRAMMERS.
+The Exercises marked as “ADVANCED” are meant to be challenging exercises for those that want to really put their knowledge to the test. They are exceptionally hard to complete continuously, so if you find yourself stuck or confused, do not worry! You have 2 options here:
+
+    Either FAIL 3 times for the Solution Explanation to unlock, where you will get our solution to the exercise which you can copy/paste to complete the exercise.
+
+    Or leave the exercise incomplete and try again later in the course when you feel more advanced.
+
+Good luck with the exercise!
+
+Displaying Text with Java and Escape Sequences
+
+Please, avoid changing the given source code for the exercise! Only add code, don’t modify unless it is instructed to do so!
+
+Create a Java program that:
+
+    Prompts the user to input a message.
+
+    Displays the message using both System.out.println() (with a newline) and System.out.print() (without a newline).
+
+    Prints an additional message using escape sequences to include special formatting like quotation marks and new lines.
+
+The program should:
+
+    Use Scanner to read the user input.
+
+    Use both System.out.println() and System.out.print() to demonstrate the difference in how the text is printed.
+
+    Use escape sequences to format text, including \n (new line) and \" (quotation marks).
+
+Alert!
+
+The program should correctly print user input and format the output using escape sequences. Make sure to produce exact outputs for the given inputs to pass the tests.
+
+EXTRA INFO! What does the Test Code Expect?
+
+The test code verifies that your program correctly handles specific scenarios. Here are the details:
+
+Test Case: Input: Hello World
+
+Expected Output:
+
+    Enter your message:
+    Using println:
+    Hello World
+    Using print:Hello World
+
+    Text with escape sequences:
+    Hello, "Java Masterclass" students!
+    Welcome to Day 1.
+    Let's get started!
+
+Make sure your program produces this exact output for the given input to pass the tests.
+
+Good luck!

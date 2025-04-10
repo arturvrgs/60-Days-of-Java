@@ -1,8 +1,7 @@
 import java.util.Scanner;
 
 public class BudgetTrackerPlus {
-
-    public static void main(String[] args) {
+    public void BudgetTrackerPlus() {
         // Step 1: Declare and initialize Scanner
         Scanner scanner = new Scanner(System.in);
 
