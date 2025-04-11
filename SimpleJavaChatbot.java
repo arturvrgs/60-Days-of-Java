@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class SimpleJavaChatbot {
-    public static void main(String[] args) {
+    public void SimpleJavaChatbot() {
 
         Scanner scan = new Scanner(System.in);
 

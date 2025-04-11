@@ -1,0 +1,126 @@
+Let's Practice: Galaxy Weather Advisor
+Interactive Exercise: Galaxy Weather Advisor
+Objective
+In this exercise, you will create a Galaxy Weather Advisor program in Java. This futuristic application will:
+
+✅ Take user input for a planet name. ✅ Accept temperature input in Celsius for that planet. ✅ Provide clothing and precautionary advice based on the planet and temperature. ✅ Utilize conditional statements (if-else) and string operations (toLowerCase(), trim()).
+
+By completing this exercise, you will strengthen your skills in user input handling, conditional logic, and string manipulation.
+
+
+
+Problem Statement
+Create a Java program that: 1️⃣ Asks the user for the name of a planet (Earth, Mars, Venus, or Jupiter). 2️⃣ Asks for the current temperature in Celsius. 3️⃣ Provides personalized advice based on the planet and temperature range. 4️⃣ Handles invalid planet names gracefully by prompting the user for a valid name.
+
+
+
+Starter Code: Complete the Missing Parts!
+import java.util.Scanner;
+
+public class GalaxyWeatherAdvisor {
+
+    public static void main(String[] args) {
+        // Step 1: Declare and initialize Scanner object
+        Scanner scanner = new Scanner(System.in);
+
+        // Step 2: Display a welcome message
+        System.out.println("Welcome to the Galactic Weather Advisor!");
+        System.out.println("Please enter the planet you are on (Earth, Mars, Venus, Jupiter):");
+
+        // Step 3: Take user input for planet and convert to lowercase
+        String planet = //MISSING
+
+        // Step 4: Take current temperature as input
+        System.out.println("Please enter the current temperature in Celsius:");
+        double temperature = //MISSING
+
+        // Step 5: Declare a variable to store response
+        String advice = "";
+
+        // Step 6: Compute response based on planet and temperature
+        //MISSING
+
+        // Step 7: Display response
+        System.out.println(advice);
+
+        // Step 8: Close Scanner
+        scanner.close();
+    }
+}
+
+
+Expected Output
+Here are some example interactions:
+
+Earth:
+
+Please enter the planet you are on: Earth
+Please enter the current temperature in Celsius: 12
+It's quite chilly on Earth. Wear a jacket.
+Mars:
+
+Please enter the planet you are on: Mars
+Please enter the current temperature in Celsius: -80
+It's extremely cold on Mars! Wear a space suit with thermal insulation.
+Venus:
+
+Please enter the planet you are on: Venus
+Please enter the current temperature in Celsius: 450
+It's scorching hot on Venus. Avoid going outside!
+Unknown Planet:
+
+Please enter the planet you are on: Pluto
+Unknown planet! Please enter a valid planet name.
+
+
+Final Solution: Check Only If Needed!
+⚠️ ONLY CHECK THIS AFTER COMPLETING THE EXERCISE YOURSELF OR IF YOU ARE STUCK!
+
+🔗 Problem Solution URL: Click here
+
+import java.util.Scanner;
+
+public class GalaxyWeatherAdvisor {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Welcome to the Galactic Weather Advisor!");
+        System.out.println("Please enter the planet you are on (Earth, Mars, Venus, Jupiter):");
+
+        String planet = scanner.nextLine().trim().toLowerCase();
+
+        System.out.println("Please enter the current temperature in Celsius:");
+        double temperature = scanner.nextDouble();
+
+        String advice = "";
+
+        if (planet.equals("earth")) {
+            if (temperature < 0) advice = "It's freezing on Earth! Wear a heavy coat.";
+            else if (temperature < 15) advice = "It's quite chilly on Earth. Wear a jacket.";
+            else if (temperature < 25) advice = "The weather on Earth is pleasant. A light sweater should be enough.";
+            else advice = "It's warm on Earth. Wear something light!";
+        } else if (planet.equals("mars")) {
+            if (temperature < -60) advice = "It's extremely cold on Mars! Wear a space suit with thermal insulation.";
+            else if (temperature < 0) advice = "It's very cold on Mars. Wear a thermal suit.";
+            else advice = "It's unusually warm on Mars. Enjoy the rare warmth!";
+        } else if (planet.equals("venus")) {
+            if (temperature < 400) advice = "It's incredibly hot on Venus! Stay indoors with air conditioning.";
+            else advice = "It's scorching hot on Venus. Avoid going outside!";
+        } else if (planet.equals("jupiter")) {
+            if (temperature < -100) advice = "It's freezing on Jupiter! Stay in your heated space module.";
+            else if (temperature < -50) advice = "It's very cold on Jupiter. Wear a thermal space suit.";
+            else advice = "It's surprisingly warm on Jupiter. Enjoy the pleasant temperature!";
+        } else {
+            advice = "Unknown planet! Please enter a valid planet name.";
+        }
+
+        System.out.println(advice);
+        scanner.close();
+    }
+}
+
+
+If you have any questions or run into any issues, feel free to ask in the course discussion forums. We’re here to help!
+
+Happy coding! 🚀
