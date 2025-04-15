@@ -26,6 +26,7 @@ public class TextBasedAdventure {
             case "D" -> key = Key.RIGHT;
 
             default -> System.out.println("Tecla inválida!");
+
         }
 
 
